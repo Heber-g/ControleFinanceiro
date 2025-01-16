@@ -9,3 +9,8 @@
     /*-fx-border-color: #ccc;*/
     
 }
+
+.BotaoArredondado{
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+}

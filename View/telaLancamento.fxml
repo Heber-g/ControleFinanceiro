@@ -1,7 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.VBox?>
 
-<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presenter.Tela2Controller">
-    <Button text="Voltar para a Tela Inicial" onAction="#voltarParaTelaInicial" />
-</VBox>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presenter.Tela2Controller">
+   <children>
+      <BorderPane layoutX="114.0" layoutY="86.0" prefHeight="200.0" prefWidth="200.0" styleClass="telaInicial" stylesheets="@../resources/telaInicio.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <ImageView fitHeight="504.0" fitWidth="482.0" opacity="0.58" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../img/LogoIgreja.png" />
+               </image>
+               <BorderPane.margin>
+                  <Insets bottom="50.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <DatePicker prefHeight="40.0" prefWidth="125.0" AnchorPane.bottomAnchor="349.0" AnchorPane.leftAnchor="50.0" />
+      <TextField fx:id="Oferta" layoutX="115.0" layoutY="208.0" prefHeight="42.0" prefWidth="84.0" styleClass="BotaoArredondado" stylesheets="@../resources/telaInicio.css" AnchorPane.bottomAnchor="349.0" AnchorPane.leftAnchor="200.0">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </TextField>
+      <TextField prefHeight="42.0" prefWidth="84.0" styleClass="BotaoArredondado" stylesheets="@../resources/telaInicio.css" AnchorPane.bottomAnchor="349.0" AnchorPane.leftAnchor="290.0">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </TextField>
+      <TextField prefHeight="42.0" prefWidth="84.0" styleClass="BotaoArredondado" stylesheets="@../resources/telaInicio.css" AnchorPane.bottomAnchor="349.0" AnchorPane.leftAnchor="380.0">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="392.0" layoutY="195.0" text="Saída" textFill="WHITE" AnchorPane.bottomAnchor="400.0">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow height="2.0" radius="0.5" width="2.0">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <TextField prefHeight="42.0" styleClass="BotaoArredondado" stylesheets="@../resources/telaInicio.css" AnchorPane.bottomAnchor="349.0" AnchorPane.leftAnchor="470.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </TextField>
+      <TextField prefHeight="42.0" styleClass="BotaoArredondado" stylesheets="@../resources/telaInicio.css" AnchorPane.bottomAnchor="175.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="295.0" layoutY="188.0" text="Dízimo" textFill="WHITE" AnchorPane.bottomAnchor="400.0">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow height="2.0" radius="0.5" width="2.0">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label layoutX="87.0" layoutY="195.0" text="Data" textFill="WHITE" AnchorPane.bottomAnchor="400.0">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow height="2.0" radius="0.5" width="2.0">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label layoutX="211.0" layoutY="197.0" text="Oferta" textFill="WHITE" AnchorPane.bottomAnchor="400.0">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow height="2.0" radius="0.5" width="2.0">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label layoutX="811.0" layoutY="196.0" text="Dizimista" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="400.0" AnchorPane.leftAnchor="520.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow height="2.0" radius="0.5" width="2.0">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Label layoutX="563.0" layoutY="368.0" text="Descrição da saída" textFill="WHITE" AnchorPane.bottomAnchor="225.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+         <effect>
+            <DropShadow height="2.0" radius="0.5" width="2.0">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Button fx:id="btnInicio" mnemonicParsing="false" onAction="#voltarParaTelaInicial" styleClass="botaoEdicao" stylesheets="@../resources/telaInicio.css" text="Voltar" textFill="WHITE" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="100.0">
+         <padding>
+            <Insets bottom="20.0" left="40.0" right="40.0" top="20.0" />
+         </padding>
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" styleClass="botaoEdicao" stylesheets="@../resources/telaInicio.css" text="Salvar" textFill="WHITE" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="100.0">
+         <padding>
+            <Insets bottom="20.0" left="40.0" right="40.0" top="20.0" />
+         </padding>
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
