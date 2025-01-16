@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.Node;
 import javafx.stage.Stage;
 
 import java.io.File;
@@ -11,31 +12,30 @@ import java.io.IOException;
 
 public class TelaController {
     
-    public void irParaTelaLancamentos(){
+    public void irParaTelaLancamentos(javafx.event.ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(new File("View/telaLancamento.fxml").toURI().toURL());
-            Parent root = loader.load();
+            //Carregar o arquivo FXML da nova tela
+            Parent novaTela = FXMLLoader.load(getClass().getResource("/View/telaLancamento.fxml"));
+            //Aqui se recupera o Stage a partir do evento que disparou o método.
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-            // Obtém o Stage atual e muda a Scene
-            Stage stage = new Stage();
-            stage.setTitle("Tela de Lançamentos");
-            stage.setScene(new Scene(root));
-            stage.show();
+            //Aqui substitui-se o root da cena atual pela nova tela a ser carregada
+            Scene scene = stage.getScene();
+            scene.setRoot(novaTela);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public void irParaTelaEditar() {
+    public void irParaTelaEditar(javafx.event.ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(new File("View/telaEdicao.fxml").toURI().toURL());
-            Parent root = loader.load();
+            Parent novaTela = FXMLLoader.load(getClass().getResource("/View/telaEdicao.fxml"));
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-            // Obtém o Stage atual e muda a Scene
-            Stage stage = new Stage();
-            stage.setTitle("Tela de Edição");
-            stage.setScene(new Scene(root));
-            stage.show();
+            Scene scene = stage.getScene();
+            scene.setRoot(novaTela);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
