@@ -1,0 +1,11 @@
+.telaInicial{
+    -fx-background-color:#70959C ;
+}
+
+.botaoEdicao{
+    -fx-background-color: #0400ff;
+    -fx-background-radius: 25; /* Raio das bordas */
+    -fx-border-radius: 25; /* Raio da borda */
+    /*-fx-border-color: #ccc;*/
+    
+}
