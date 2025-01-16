@@ -1,3 +1,4 @@
-# ControleFinanceiro
+# Controle Financeiro
 O projeto visa a contrução de uma aplicação Java desktop para o controle financeiro de uma instituição religiosa sem fins lucrativos.
-O sistema irá possuir um superUsuário capaz de cadastrar e excluir usuários, que serão os tesoureiros da instituição, os quais podem ser alterados de acordo com o tempo de mandato e votação. Outra funcionalidade da aplicação é de gerar relatórios dos dados salvos no banco de dados, o relatório será feito em um excel
+O sistema funcionará através da criação e modificação de um arquivo Excel, o qual será usado para guardar os dados da movimentação monetária da instituição.
+O projeto utiliza a biblioteca JavaFX para criação das telas da aplicação, Scene Builder para auxiliar no desenvolvimento das telas usando JavaFX e python para manipular o arquivo Excel
