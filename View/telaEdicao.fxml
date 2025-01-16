@@ -1,0 +1,6 @@
+<?import javafx.scene.layout.Gridpane?>
+
+<Gridpane fx:controller="TelaController"
+    xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="18" vgap="18">
+
+</Gridpane>
